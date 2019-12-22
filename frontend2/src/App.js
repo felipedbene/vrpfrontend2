@@ -20,15 +20,7 @@ class App extends Component {
     
    return(
      <div>
-      <h1>
-      Hello, {this.formatName(user)}
-      </h1>
       <Products />
-      <Rating rating="1" pinto="5" />
-      <Rating rating="2" pinto="4"/>
-      <Rating rating="3" pinto="3" />
-      <Rating rating="4" pinto="2" />
-      <Rating rating="5" pinto="1" />
       <Button variant="primary" disabled={!isValid}> Vagabundo</Button>
      </div>
      );
