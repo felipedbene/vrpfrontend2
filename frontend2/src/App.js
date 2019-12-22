@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Products from './Products';
 import {Button} from 'react-bootstrap';
 import Rating from './Rating';
+import JumboTronComponent from './JumboTronComponent';
 
 class App extends Component {
   
@@ -11,17 +12,13 @@ class App extends Component {
   
   
   render(){
-    const isValid = false;
-    
-    const user = {
-      firstName : 'Felipe',
-      lastName : 'Daniel'
-    };
     
    return(
      <div>
+     <JumboTronComponent>
+     This is a long text!
+     </JumboTronComponent>
       <Products />
-      <Button variant="primary" disabled={!isValid}> Vagabundo</Button>
      </div>
      );
   }

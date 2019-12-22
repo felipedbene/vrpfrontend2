@@ -32,10 +32,15 @@ class Products extends Component {
     
     
     render(){
-        const listProducts = this.products.map( (product) => <Product key={product.productName} data={product} /> );
+        //const listProducts = this.products.map( (product) => <Product key={product.productName} data={product} /> );
+        const listProducts = "";
     return(
         <div>
+        {listProducts.length > 0 ? (
         <ul>{listProducts}</ul>
+        ) : (
+        <ul>No products to display !</ul>
+        )}
         </div>
         );
 }
